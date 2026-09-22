@@ -136,14 +136,6 @@ address{font:400 clamp(18px,1.65vw,25px)/1.45 Georgia,'Times New Roman',serif;fo
 @media (max-width:370px){.front-copy h1{font-size:64px}.hero-actions,.visit-actions{align-items:flex-start}.front-grid{gap:40px}.noticeboard-row{gap:8px}.row-copy b{font-size:16px}.noticeboard-end{display:block}.noticeboard-end a{display:block;margin-top:9px}.gig-date strong{font-size:22px}.gig-info{padding:18px 14px}.gig-info h3{font-size:24px}.chalk-row span:last-child{font-size:9px}.footer-grid{gap:25px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
-/* A modest reference photograph, not a fake photograph of the venue. */
-.atmosphere-reference{display:grid;grid-template-columns:minmax(0,450px) 1fr;gap:22px;align-items:center;margin:0 0 43px;padding:14px;background:#efe2d3;border:1px solid #c8b9a9}
-.atmosphere-reference img{display:block;width:100%;height:240px;object-fit:cover;background:#8b665c}
-.atmosphere-reference figcaption{max-width:380px;font-size:13px;line-height:1.7;color:#493a34}
-.atmosphere-reference figcaption strong{display:block;font-size:10px;letter-spacing:.13em;margin-bottom:12px;color:var(--wine)}
-.atmosphere-reference figcaption a{display:block;margin-top:12px;text-decoration:underline;text-underline-offset:3px;font-weight:700}
-@media(max-width:620px){.atmosphere-reference{display:block;padding:9px}.atmosphere-reference img{height:205px}.atmosphere-reference figcaption{padding:16px 9px 9px}}
-
 /* Venue photographs, supplied for this portfolio concept. */
 .hero-photo,.record-photo,.venue-photo,.visit-photo{margin:0;min-width:0}
 .hero-photo{position:relative;overflow:hidden;margin:-14px -14px 23px;aspect-ratio:1.65}
@@ -160,3 +152,61 @@ address{font:400 clamp(18px,1.65vw,25px)/1.45 Georgia,'Times New Roman',serif;fo
 .visit-photo img{display:block;width:100%;height:270px;object-fit:cover;object-position:center 35%}
 .visit-photo figcaption{padding:8px 0 0;font-size:12px;color:#4a332d}
 @media(max-width:620px){.hero-photo{margin:-9px -9px 18px;aspect-ratio:1.6}.record-photo{grid-template-columns:110px minmax(0,1fr);min-height:125px}.record-photo img{height:125px}.record-photo figcaption{font-size:20px;padding:12px}.bar-photo{height:210px}.venue-photo{display:block}.venue-photo img{height:220px}.venue-photo figcaption{font-size:23px;padding:17px}.visit-photo img{height:260px}}
+
+/* SITEPRO final pass: genuine venue photography, usable links and progressive enhancement. */
+.hero-side{min-width:0;display:grid;grid-template-rows:auto auto;gap:18px;align-self:center}
+.front-grid{align-items:center}
+.hero-photo{position:relative;aspect-ratio:1.44;margin:0;overflow:hidden;background:#482526}
+.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%;transition:transform .4s ease}
+.hero-photo:hover img{transform:scale(1.025)}
+.hero-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 15px 12px;background:linear-gradient(transparent,rgba(21,17,16,.9));color:#fffaf1;font-size:11px;font-weight:800;letter-spacing:.12em}
+.noticeboard{transform:none;box-shadow:none;padding:19px 25px 17px}
+.noticeboard-intro{font-size:clamp(22px,2.1vw,31px);margin:14px 0 12px}
+.noticeboard-row{padding:11px 0;min-height:59px}
+.noticeboard-end{padding-top:11px;margin-top:0}
+.front-grid{padding-block:clamp(35px,5vw,65px);min-height:0}
+.front-copy h1{margin:22px 0 22px}
+.hero-detail{margin-top:15px}
+.hero-actions{margin-top:24px}
+.site-nav a,.header-social,.footer-links a,.fact-note a,.hours-panel a,.noticeboard-end a,.gig-info>a,.place-social,.plain-link{min-height:44px;display:inline-flex;align-items:center}
+.site-nav a{padding:9px 0}
+.footer-links a{padding:9px 0}
+.fact-note a,.hours-panel a{padding:10px 2px;margin:-8px 0}
+.noticeboard-end a{padding:10px 2px;margin:-8px 0}
+.gig-info>a{padding:10px 0}
+.row-copy small{font-size:12px;opacity:1;color:#edcfc3}
+.noticeboard-top,.noticeboard-end{font-size:11px}
+.hero-photo figcaption,.front-bottom,.footer-bottom{font-size:11px}
+.visit-photo img{object-position:center 31%}
+/* With scripts disabled, navigation remains available; only a working menu gets a button. */
+.menu-button[hidden]{display:none!important}
+.has-js .menu-button[hidden]{display:flex!important}
+@media(max-width:900px){
+  .header-inner{flex-wrap:wrap}
+  .site-nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:12px;position:static;box-shadow:none}
+  .site-nav a{padding:9px 0;min-height:44px}
+  .has-js .site-nav{display:none;position:absolute;flex-direction:column;flex-wrap:nowrap;gap:0}
+  .has-js.nav-open .site-nav{display:flex}
+  .has-js .menu-button[hidden]{display:flex!important}
+  .front-grid{gap:29px}
+  .hero-side{width:min(100%,680px)}
+  .hero-photo{aspect-ratio:1.63}
+  .noticeboard{width:100%;margin:0;padding:20px 25px}
+  .noticeboard-intro{margin:14px 0;font-size:27px}
+}
+@media(max-width:620px){
+  .front-grid{padding-block:30px 45px;gap:24px}
+  .front-copy h1{font-size:clamp(65px,14.5vw,96px);margin:17px 0}
+  .hero-subtitle{font-size:20px}
+  .hero-detail{font-size:14px;margin-top:12px}
+  .hero-actions{margin-top:19px}
+  .hero-photo{aspect-ratio:1.48}
+  .noticeboard{padding:17px 18px}
+  .noticeboard-intro{font-size:24px;margin:11px 0}
+  .noticeboard-row{min-height:57px}
+  .noticeboard-end{display:flex;flex-wrap:wrap}
+  .noticeboard-end a{white-space:normal}
+  .gig-info>a{font-size:13px}
+  .footer-links a{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){.hero-photo img{transition:none}.hero-photo:hover img{transform:none}}

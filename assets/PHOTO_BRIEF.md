@@ -1,6 +1,6 @@
 # Strange Brew: photos for a client-approved release
 
-The current website intentionally uses **no venue photographs or illustrated substitute**. It is a useful live design concept, not a claim to show the venue's actual interior.
+The current independent website concept uses five photographs supplied by the requester, showing the venue and its customers. They are **not independently verified as licensed for commercial or official use**. Obtain permission from the rights holder, the venue and any identifiable people as appropriate before official publication.
 
 Request venue-owned, licensed photographs with permission and consent from identifiable guests where relevant:
 - Warm wide shot of the real red seating area, 1600px wide or greater.

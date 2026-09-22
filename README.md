@@ -26,7 +26,7 @@ Instagram: https://www.instagram.com/strangebrewbar/
 Maps uses a place search, not a fabricated pin.
 
 ## Client-readiness
-Obtain approval for public use of the venue's brand, logo, materials and photography, confirmation of menu/current programme/hours, and stakeholder signoff before claiming the site is official. For a photo-led version, obtain actual on-location venue photography with usage rights rather than pretending illustrations or stock shots represent the business. See PHOTO_BRIEF.md.
+Obtain approval for public use of the venue's brand, logo, materials and photography, confirmation of menu/current programme/hours, and stakeholder signoff before claiming the site is official. Five venue photographs are supplied for the independent concept. Obtain written rights/venue approval for any official use and review consent for identifiable guests. See PHOTO_BRIEF.md.
 
 GitHub Pages: Deploy from branch main, root. No build step. Public static HTML/CSS/JS and local media are viewable/copyable by any visitor; do not put secrets in this frontend.
 
@@ -36,3 +36,6 @@ Check internal links and external URLs, assets, menu button/Escape/outside-click
 
 ## User-supplied Strange Brew photographs
 The current site uses five optimized local WebP image files in assets/ supplied by the project requester: hero-exterior-evening.webp (hero), vinyl-records-interior.webp (music), drinks-pint-closeup.webp (bar), crowd-atmosphere.webp (venue), and front-exterior-people.webp (visit). WebP is a standard browser image format, **not** an HTML/webpage file. The previous generic stock photo was removed from both the webpage and repository. Obtain confirmation of image copyright/usage rights and any needed permissions from identifiable people or the venue before presenting an official client website.
+
+## SITEPRO QA and design pass (23 September 2026)
+Updated the hero to display actual exterior photography as its own image rather than a small panel embedded inside a noticeboard. Removed obsolete stock-image CSS. Adjusted mobile spacing, interactive hit areas, clearer photo descriptions and a no-JavaScript navigation fallback. Corrected the false footer claim about venue photographs. CSS and JS use explicit versioned URLs to avoid mixing a cached stylesheet with updated HTML. See the site source for implementation; the full 178-point historical checklist was not separately available for a literal item-by-item signoff.

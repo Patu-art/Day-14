@@ -1,11 +1,15 @@
 'use strict';
 
+// Keep the navigation visible without JavaScript. Enable the compact menu only after initialization.
+document.documentElement.classList.add('has-js');
+
 const menuButton = document.getElementById('menu-button');
 const navigation = document.getElementById('site-nav');
+if (menuButton) menuButton.hidden = false;
 const mobile = window.matchMedia('(max-width: 900px)');
 
 function closeMenu(restoreFocus = false) {
-  document.body.classList.remove('nav-open');
+  document.documentElement.classList.remove('nav-open');
   menuButton.setAttribute('aria-expanded', 'false');
   menuButton.setAttribute('aria-label', 'Open menu');
   if (restoreFocus) menuButton.focus();
@@ -13,9 +17,9 @@ function closeMenu(restoreFocus = false) {
 
 if (menuButton && navigation) {
   menuButton.addEventListener('click', () => {
-    const open = document.body.classList.contains('nav-open');
+    const open = document.documentElement.classList.contains('nav-open');
     if (open) return closeMenu();
-    document.body.classList.add('nav-open');
+    document.documentElement.classList.add('nav-open');
     menuButton.setAttribute('aria-expanded', 'true');
     menuButton.setAttribute('aria-label', 'Close menu');
     navigation.querySelector('a')?.focus();
@@ -26,7 +30,7 @@ if (menuButton && navigation) {
   });
 
   document.addEventListener('keydown', event => {
-    if (!mobile.matches || !document.body.classList.contains('nav-open')) return;
+    if (!mobile.matches || !document.documentElement.classList.contains('nav-open')) return;
     if (event.key === 'Escape') {
       event.preventDefault();
       return closeMenu(true);
@@ -45,7 +49,7 @@ if (menuButton && navigation) {
   });
 
   document.addEventListener('pointerdown', event => {
-    if (document.body.classList.contains('nav-open') &&
+    if (document.documentElement.classList.contains('nav-open') &&
         !menuButton.contains(event.target) &&
         !navigation.contains(event.target)) closeMenu();
   });
