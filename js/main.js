@@ -1,7 +1,6 @@
 'use strict';
 
-// Keep the navigation visible without JavaScript. Enable the compact menu only after initialization.
-document.documentElement.classList.add('has-js');
+// The compact layout is enabled by the tiny bootstrap script in the document head.
 
 const menuButton = document.getElementById('menu-button');
 const navigation = document.getElementById('site-nav');

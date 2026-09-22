@@ -214,3 +214,7 @@ address{font:400 clamp(18px,1.65vw,25px)/1.45 Georgia,'Times New Roman',serif;fo
 /* Solid caption surface retains legible contrast over any venue photograph. */
 .hero-photo figcaption{background:#211d1b;color:#fff8ef;padding:10px 15px}
 .has-js.nav-open body{overflow:hidden}
+
+/* Avoid exposing a nonfunctional menu toggle before the deferred controller initializes. */
+.has-js .menu-button[hidden]{display:none!important}
+@media(max-width:900px){.has-js .menu-button:not([hidden]){display:flex!important}}

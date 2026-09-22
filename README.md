@@ -8,7 +8,8 @@ The earlier concept used a generic oversized title + illustrated vinyl + ticker 
 ## Structure
 - index.html — semantic page and useful venue information.
 - css/style.css — responsive design and reduced-motion styles.
-- js/main.js — mobile navigation only; everything else works without JavaScript.
+- js/bootstrap.js — tiny early layout marker to prevent a mobile navigation layout shift.
+- js/main.js — deferred mobile navigation controller; everything else works without JavaScript.
 - assets/favicon.svg — original unofficial monogram.
 - assets/PHOTO_BRIEF.md — venue photo and rights requirements.
 
@@ -39,3 +40,6 @@ The current site uses five optimized local WebP image files in assets/ supplied 
 
 ## SITEPRO QA and design pass (23 September 2026)
 Updated the hero to display actual exterior photography as its own image rather than a small panel embedded inside a noticeboard. Removed obsolete stock-image CSS. Adjusted mobile spacing, interactive hit areas, clearer photo descriptions and a no-JavaScript navigation fallback. Corrected the false footer claim about venue photographs. CSS and JS use explicit versioned URLs to avoid mixing a cached stylesheet with updated HTML. See the site source for implementation; the full 178-point historical checklist was not separately available for a literal item-by-item signoff.
+
+## Performance note
+Mobile Lighthouse first identified a significant layout shift while the navigation changed from its no-JavaScript fallback to the compact menu. The early bootstrap now sets the layout marker before page rendering; the deferred main controller reveals the interactive menu button only after attaching its handlers. This avoids hiding navigation for users with JavaScript disabled and avoids an inert toggle while JavaScript initializes.
