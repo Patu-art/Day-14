@@ -9,3 +9,6 @@ Request venue-owned, licensed photographs with permission and consent from ident
 - Rear live-music/open-decks area without misleading dates or performers.
 
 Use optimized local WebP/JPEG in assets/ after obtaining rights. Add descriptive alt text and layout-aware crops; do not use third-party Instagram/Google hotlinks or scrape their images without permission.
+
+## Currently included source reference
+`bar-atmosphere-reference.webp` is a small Unsplash ambience stock photo, **not a Strange Brew photo**. It is labelled on the page and used as a visual reference only. Replace it with venue-supplied material after consent. Image source: https://images.unsplash.com/photo-1514933651103-005eec06c04b , licence: https://unsplash.com/license .
