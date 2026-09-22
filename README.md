@@ -33,5 +33,6 @@ GitHub Pages: Deploy from branch main, root. No build step. Public static HTML/C
 ## QA
 Check internal links and external URLs, assets, menu button/Escape/outside-click, keyboard operation, horizontal overflow and layout at 320/390/768/1024/1440px after each content or photo update.
 
-## Reference photograph (added 22 September 2026)
-The local file `assets/bar-atmosphere-reference.webp` is a resized, compressed **stock ambience photograph**, not a photo of Strange Brew and not venue-approved promotional material. Source image: https://unsplash.com/photos (image source URL: https://images.unsplash.com/photo-1514933651103-005eec06c04b). Unsplash License: https://unsplash.com/license . Its original setting is not represented as Strange Brew. The image is placed in a labelled inspiration module linking to the venue's real Instagram. It should be replaced by a licensed photo of the actual venue if the bar approves the project. Its compressed size is for a small editorial thumbnail, not a full-screen hero.
+
+## User-supplied Strange Brew photographs
+The current site uses five optimized local WebP image files in assets/ supplied by the project requester: hero-exterior-evening.webp (hero), vinyl-records-interior.webp (music), drinks-pint-closeup.webp (bar), crowd-atmosphere.webp (venue), and front-exterior-people.webp (visit). WebP is a standard browser image format, **not** an HTML/webpage file. The previous generic stock photo was removed from both the webpage and repository. Obtain confirmation of image copyright/usage rights and any needed permissions from identifiable people or the venue before presenting an official client website.
