@@ -3,69 +3,137 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#191919">
-  <meta name="description" content="An independent website concept for Strange Brew in Chorlton: local beer, records, the front patio and a place to spend an evening.">
+  <meta name="theme-color" content="#622a30">
+  <meta name="description" content="A website concept for Strange Brew, the neighbourhood bar on Barlow Moor Road in Chorlton. Local beer, records and a place to spend your evening.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Strange Brew | Chorlton — Off the record">
-  <meta property="og:description" content="Beer, records and good company at 370 Barlow Moor Road. An unofficial design concept.">
-  <title>Strange Brew — Chorlton | An independent website concept</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preload" as="image" type="image/svg+xml" href="assets/record-art.svg">
+  <meta property="og:title" content="Strange Brew | Bar, records & Chorlton">
+  <meta property="og:description" content="The bar on Barlow Moor Road. Find regular vinyl nights, drinks, opening hours and directions. Unofficial website concept.">
+  <title>Strange Brew — Bar, records & Chorlton</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="concept-note"><span class="concept-dot" aria-hidden="true"></span>INDEPENDENT DESIGN CONCEPT <span class="note-separator" aria-hidden="true">/</span> NOT THE OFFICIAL STRANGE BREW WEBSITE</div>
-  <header class="site-header" id="site-header">
-    <div class="header-inner wrap">
-      <a class="brand" href="#top" aria-label="Strange Brew — back to top"><span class="brand-icon" aria-hidden="true">✳</span><span>strange<span class="brand-line">brew<span class="brand-period">.</span></span></span></a>
-      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+  <div class="demo-note">An independent website concept — not the official Strange Brew website</div>
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a class="wordmark" href="#top" aria-label="Strange Brew, back to top">strange<span>brew</span><b aria-hidden="true">/</b></a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="#whats-on">What's on</a>
         <a href="#the-bar">The bar</a>
         <a href="#the-place">The place</a>
-        <a href="#visit">Find us</a>
+        <a href="#visit">Visit</a>
+        <a class="mobile-social" href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
       </nav>
-      <a class="header-visit" href="https://www.google.com/maps/search/?api=1&amp;query=Strange+Brew+370+Barlow+Moor+Road+Chorlton+M21+8AZ" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+      <a class="header-social" href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">Find us on Instagram <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" type="button" id="menu-button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </header>
+
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> CHORLTON / MANCHESTER <span aria-hidden="true">·</span> BARLOW MOOR RD</p>
-          <h1 id="hero-title"><span>A LITTLE</span><span>OFF THE</span><span class="hero-record-word">RECORD<span class="hero-period">.</span></span></h1>
-          <p class="hero-intro">Local beer. Records with character. A little place on Barlow Moor Road that goes further back than you think.</p>
-          <div class="hero-actions"><a class="btn btn-paper" href="#whats-on">Find your night <span aria-hidden="true">↗</span></a><a class="under-link" href="#visit">Come find us <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-meta"><span><b>370</b> BARLOW MOOR RD</span><span><b>M21</b> 8AZ</span><span class="meta-asterisk" aria-hidden="true">✳</span></div>
+    <section class="front-page" aria-labelledby="hero-title">
+      <div class="shell front-grid">
+        <div class="front-copy">
+          <p class="overline"><span class="led" aria-hidden="true"></span> 370 Barlow Moor Road · Chorlton</p>
+          <h1 id="hero-title">Strange<br><em>Brew.</em></h1>
+          <p class="hero-subtitle">Your neighbourhood bar.<br>A good place to lose track of the time, not the record.</p>
+          <p class="hero-detail">A front patio, local beer and a little more music out the back. No dress code for a good evening.</p>
+          <div class="hero-actions">
+            <a class="solid-link" href="#whats-on">See what's on <span aria-hidden="true">↘</span></a>
+            <a class="plain-link" href="#visit">Find the bar <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <div class="hero-art" aria-label="Original illustrated vinyl record and sleeve inspired by the bar's music culture; not a photo of the venue">
-          <div class="hero-art-backdrop" aria-hidden="true"></div>
-          <div class="sleeve"><div class="sleeve-label"><span>SB / 001</span><span>CHORLTON CUT</span></div><span class="sleeve-word">GOOD<br>NOISE.</span><span class="sleeve-small">A BAR WITH A SOUNDTRACK</span><span class="sleeve-seal" aria-hidden="true">✳</span></div>
-          <img class="record-image" src="assets/record-art.svg" alt="Illustrated black vinyl record with an orange centre label" width="700" height="700" fetchpriority="high">
-          <div class="hero-sticker"><span>BEER &amp;</span><strong>BEATS</strong><span>IN CHORLTON</span></div>
-          <span class="hero-art-caption">ORIGINAL CONCEPT ART — NOT VENUE PHOTOGRAPHY</span>
+        <aside class="noticeboard" aria-label="Regular music nights">
+          <div class="noticeboard-top"><span>ON THE BOARD</span><span>CHORLTON / M21</span></div>
+          <div class="noticeboard-intro">Come for a drink.<br><i>Stay for the soundtrack.</i></div>
+          <a class="noticeboard-row" href="#thursday"><span class="day">THU</span><span class="row-copy"><b>Bring your own records</b><small>Open decks · regular listing</small></span><span aria-hidden="true">↗</span></a>
+          <a class="noticeboard-row" href="#saturday"><span class="day">SAT</span><span class="row-copy"><b>Vinyl DJs</b><small>Regular Saturday sessions</small></span><span aria-hidden="true">↗</span></a>
+          <div class="noticeboard-end"><span>WHAT'S ON THIS WEEK?</span><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">Check the latest ↗</a></div>
+        </aside>
+      </div>
+      <div class="front-bottom shell"><span>BAR / MUSIC / GOOD COMPANY</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="weekly section-space" id="whats-on" aria-labelledby="weekly-title">
+      <div class="shell">
+        <div class="section-intro">
+          <div><p class="eyebrow">01 — THE REGULARS</p><h2 id="weekly-title">Put it in <em>rotation.</em></h2></div>
+          <p>Some nights are better with a soundtrack. Here's what the venue is known for; check its latest updates before you set off.</p>
+        </div>
+        <div class="weekly-layout">
+          <article class="gig-card" id="thursday">
+            <div class="gig-date"><span>01</span><strong>THURSDAY</strong><span>EVERY WEEK*</span></div>
+            <div class="gig-info"><p class="gig-type">OPEN DECKS / BRING YOUR OWN VINYL</p><h3>Bring a record.<br>Start a conversation.</h3><p>The regular bring-your-own-records session. Check with the bar for the latest format and start time.</p><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">Check this week's details ↗</a></div>
+          </article>
+          <article class="gig-card second" id="saturday">
+            <div class="gig-date"><span>02</span><strong>SATURDAY</strong><span>EVERY WEEK*</span></div>
+            <div class="gig-info"><p class="gig-type">THE WEEKEND / VINYL DJs</p><h3>Leave the playlist<br>to someone else.</h3><p>Saturday vinyl sessions are part of the bar's regular programme. Follow the venue for the current line-up.</p><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">See the current line-up ↗</a></div>
+          </article>
+        </div>
+        <p class="fact-note">* Regular activities documented by CAMRA, not guaranteed dates or confirmed bookings. <a href="https://camra.org.uk/pubs/strange-brew-chorlton-cum-hardy-129983" target="_blank" rel="noopener noreferrer">View the venue listing ↗</a></p>
+      </div>
+    </section>
+
+    <section class="bar-section section-space" id="the-bar" aria-labelledby="bar-title">
+      <div class="shell bar-layout">
+        <div class="bar-copy">
+          <p class="eyebrow">02 — BEHIND THE BAR</p>
+          <h2 id="bar-title">Something<br><em>good on tap.</em></h2>
+          <p>Ask what's pouring when you get here. The selection changes, with a focus on local beer and plenty of reasons to try something different.</p>
+          <a class="outline-link" href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">See the latest at the bar ↗</a>
+        </div>
+        <div class="chalk-list">
+          <div class="chalk-top"><span>STRANGE BREW</span><span>DRINKS / NO. 02</span></div>
+          <p class="chalk-heading">Behind<br>the bar</p>
+          <div class="chalk-row"><span>01</span><b>Cask ale</b><span>Ask what's on</span></div>
+          <div class="chalk-row"><span>02</span><b>Keg beer</b><span>Rotating selection</span></div>
+          <div class="chalk-row"><span>03</span><b>Cider</b><span>Ask at the bar</span></div>
+          <div class="chalk-foot">A GUIDE TO THE BAR — NOT A LIVE MENU OR STOCK LIST.</div>
         </div>
       </div>
-      <div class="hero-foot wrap"><span>YOUR CORNER OF CHORLTON</span><span class="hero-foot-center" aria-hidden="true">↘</span><span>SCROLL FOR THE GOOD STUFF</span></div>
     </section>
-    <div class="ticker" aria-label="Local beer, vinyl records, patio and good company"><div class="ticker-track" aria-hidden="true"><span>LOCAL BEER <i>✳</i> OPEN DECKS <i>✳</i> CHORLTON NIGHTS <i>✳</i> VINYL DJs <i>✳</i> GOOD COMPANY <i>✳</i></span><span>LOCAL BEER <i>✳</i> OPEN DECKS <i>✳</i> CHORLTON NIGHTS <i>✳</i> VINYL DJs <i>✳</i> GOOD COMPANY <i>✳</i></span></div></div>
-    <section class="events section-pad" id="whats-on" aria-labelledby="events-title">
-      <div class="wrap">
-        <div class="section-heading heading-light"><div><p class="section-index">01 <span></span> WHAT'S ON</p><h2 id="events-title">THE WEEK <em>HAS A</em><br> SOUNDTRACK<span class="red-dot">.</span></h2></div><p class="section-lead">Bring a record or let someone else pick the next one. The regular nights are part of what makes this place tick.</p></div>
-        <div class="event-grid">
-          <article class="event-card event-thu reveal"><div class="event-top"><span>01 / THURSDAYS*</span><span>↗</span></div><div class="event-illustration grooves" aria-hidden="true"><span class="small-disc"></span><span class="small-disc second"></span><span class="groove-type">33⅓</span></div><div class="event-bottom"><span class="event-tag">BRING YOUR OWN RECORDS</span><h3>Your record.<br>Our speakers.</h3><p>Thursday open decks: bring along some vinyl and share what you've been listening to.</p><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer" aria-label="Check Strange Brew Instagram for current Thursday event details">Check this week's details <span aria-hidden="true">↗</span></a></div></article>
-          <article class="event-card event-sat reveal"><div class="event-top"><span>02 / SATURDAYS*</span><span>↗</span></div><div class="event-illustration wave" aria-hidden="true"><span class="wave-title">ON<br>THE<br>DECKS</span><span class="wave-disc">✳</span><span class="wave-lines"></span></div><div class="event-bottom"><span class="event-tag">VINYL DJ SESSIONS</span><h3>Let the<br>records run.</h3><p>Saturday vinyl DJs set the mood. Drop in, grab a drink and see where the music takes you.</p><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer" aria-label="Check Strange Brew Instagram for current Saturday DJ details">Check this week's details <span aria-hidden="true">↗</span></a></div></article>
+
+    <section class="place-section section-space" id="the-place" aria-labelledby="place-title">
+      <div class="shell">
+        <div class="section-intro place-intro">
+          <div><p class="eyebrow">03 — MAKE YOURSELF AT HOME</p><h2 id="place-title">More room than<br><em>meets the eye.</em></h2></div>
+          <p>Small from the street, with different places to settle in. These are the spaces described in the venue's independent listing.</p>
         </div>
-        <p class="source-note">*Regular activities listed by CAMRA; individual sessions and times can change. Confirm this week's plans with the venue. <a href="https://camra.org.uk/pubs/strange-brew-chorlton-cum-hardy-129983" target="_blank" rel="noopener noreferrer">Venue listing ↗</a></p>
+        <div class="spaces" role="list">
+          <div class="space" role="listitem"><span class="space-no">01 / OUTSIDE</span><h3>Up front.</h3><p>The patio looks out onto Barlow Moor Road. Take a seat and watch Chorlton go by.</p><span aria-hidden="true" class="space-arrow">↗</span></div>
+          <div class="space" role="listitem"><span class="space-no">02 / INSIDE</span><h3>The red room.</h3><p>Head further in to the distinctive red seating area behind the main bar.</p><span aria-hidden="true" class="space-arrow">↗</span></div>
+          <div class="space" role="listitem"><span class="space-no">03 / OUT BACK</span><h3>Where it gets loud.</h3><p>The rear area makes room for live music and longer conversations.</p><span aria-hidden="true" class="space-arrow">↗</span></div>
+        </div>
+        <a class="place-social" href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer"><span>Want to see the real place?</span><strong>Visit the venue's Instagram ↗</strong></a>
       </div>
     </section>
-    <section class="bar section-pad" id="the-bar" aria-labelledby="bar-title"><div class="wrap bar-layout"><div class="bar-copy reveal"><p class="section-index">02 <span></span> BEHIND THE BAR</p><h2 id="bar-title">GOOD BEER.<br><em>NO BIG</em><br> SPEECH<span class="red-dot">.</span></h2><p>A changing selection on cask and keg, with local brewing in the mix. Ask the people behind the bar what's pouring today.</p><a class="btn btn-dark" href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">See the latest from the bar <span aria-hidden="true">↗</span></a><span class="bar-scribble" aria-hidden="true">↗</span></div><div class="tap-board reveal" aria-label="Bar offering categories, not a live drinks menu"><div class="tap-board-top"><span>STRANGE BREW / BAR NOTES</span><span>SB-02</span></div><div class="tap-board-title">WHAT'S<br>POURING?</div><div class="tap-row"><span class="tap-no">01</span><strong>CASK ALE</strong><span class="tap-arrow" aria-hidden="true">↗</span></div><div class="tap-row"><span class="tap-no">02</span><strong>KEG BEER</strong><span class="tap-arrow" aria-hidden="true">↗</span></div><div class="tap-row"><span class="tap-no">03</span><strong>CIDER</strong><span class="tap-arrow" aria-hidden="true">↗</span></div><div class="tap-board-bottom"><span>CASK / KEG / CIDER — ASK WHAT’S ON NOW.</span><span>ASK WHAT'S ON TODAY ✳</span></div></div></div></section>
-    <section class="place section-pad" id="the-place" aria-labelledby="place-title"><div class="wrap"><div class="section-heading"><div><p class="section-index">03 <span></span> THE PLACE</p><h2 id="place-title">SMALL FRONT.<br><em>BIG</em> PERSONALITY<span class="red-dot">.</span></h2></div><p class="section-lead">It looks like one little bar from the street. Head further in and you'll find a few more reasons to stay.</p></div><div class="place-grid"><article class="place-card place-front reveal"><span class="place-number">01 / OUT FRONT</span><div class="place-art patio-art" aria-hidden="true"><span class="patio-sun">✳</span><span class="patio-table"><i></i></span><span class="patio-chair left-chair"></span><span class="patio-chair right-chair"></span></div><h3>Take it outside.</h3><p>A front patio for catching up and watching Chorlton go by.</p></article><article class="place-card place-red reveal"><span class="place-number">02 / FURTHER IN</span><div class="place-art red-art" aria-hidden="true"><span class="red-arch"><i>SB</i></span><span class="red-light">✳</span></div><h3>Find the red room.</h3><p>Head through the bar to the seating area with its unmistakable red finish.</p></article><article class="place-card place-back reveal"><span class="place-number">03 / OUT THE BACK</span><div class="place-art stage-art" aria-hidden="true"><span class="stage-mic"></span><span class="stage-shadow">LIVE<br>MUSIC</span><span class="stage-star">✳</span></div><h3>Follow the sound.</h3><p>The rear area makes space for music and the occasional longer night.</p></article></div><p class="art-note">Original illustrative artwork, not photographs or a floor plan of the venue. <a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">See the venue on Instagram ↗</a></p></div></section>
-    <section class="visit section-pad" id="visit" aria-labelledby="visit-title"><div class="wrap visit-layout"><div class="visit-main reveal"><p class="section-index">04 <span></span> COME THROUGH</p><h2 id="visit-title">YOUR NEXT<br> ONE'S <em>HERE</em><span class="red-dot">.</span></h2><address>Strange Brew<br>370 Barlow Moor Road<br>Chorlton-cum-Hardy<br>Manchester M21 8AZ</address><div class="visit-ctas"><a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Strange+Brew+370+Barlow+Moor+Road+Chorlton+M21+8AZ" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a><a class="under-link dark-link" href="mailto:strangebrewbar@gmail.com">Email the bar <span aria-hidden="true">↗</span></a></div><p class="visit-aside">Near Chorlton Bus Station. Check current hours and events before you travel.</p></div><aside class="hours-card reveal" aria-labelledby="hours-title"><div class="hours-header"><span>INFORMATION / 04</span><span aria-hidden="true">✳</span></div><h3 id="hours-title">WHEN TO<br> DROP IN</h3><p class="hours-label">HOURS LISTED BY CAMRA — SUBJECT TO CHANGE</p><dl><div><dt>MON–THU</dt><dd>16:00–23:00</dd></div><div><dt>FRIDAY</dt><dd>16:00–00:00</dd></div><div><dt>SATURDAY</dt><dd>14:00–00:00</dd></div><div><dt>SUNDAY</dt><dd>14:00–23:00</dd></div></dl><a href="https://camra.org.uk/pubs/strange-brew-chorlton-cum-hardy-129983" target="_blank" rel="noopener noreferrer">Check the published listing <span aria-hidden="true">↗</span></a></aside></div></section>
-    <div class="closing"><div class="wrap closing-inner"><span aria-hidden="true" class="closing-star">✳</span><p>SAME CORNER.<br><em>NEW FAVOURITE RECORD.</em></p><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer" aria-label="Visit Strange Brew on Instagram">INSTAGRAM <span aria-hidden="true">↗</span></a></div></div>
+
+    <section class="visit-section section-space" id="visit" aria-labelledby="visit-title">
+      <div class="shell visit-grid">
+        <div class="visit-copy">
+          <p class="eyebrow">04 — SEE YOU THERE</p>
+          <h2 id="visit-title">Right here,<br><em>in Chorlton.</em></h2>
+          <address>Strange Brew<br>370 Barlow Moor Road<br>Chorlton-cum-Hardy<br>Manchester M21 8AZ</address>
+          <div class="visit-actions">
+            <a class="solid-link" href="https://www.google.com/maps/search/?api=1&amp;query=Strange+Brew+370+Barlow+Moor+Road+Chorlton+M21+8AZ" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+            <a class="plain-link" href="mailto:strangebrewbar@gmail.com">Email the bar <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="nearby">Near Chorlton Bus Station. Check hours and events with the venue before travelling.</p>
+        </div>
+        <div class="hours-panel">
+          <div class="hours-top"><span>WHEN TO DROP IN</span><span>LISTED HOURS*</span></div>
+          <h3>Opening<br>times<span>.</span></h3>
+          <dl><div><dt>Monday – Thursday</dt><dd>16:00 – 23:00</dd></div><div><dt>Friday</dt><dd>16:00 – 00:00</dd></div><div><dt>Saturday</dt><dd>14:00 – 00:00</dd></div><div><dt>Sunday</dt><dd>14:00 – 23:00</dd></div></dl>
+          <p>* Third-party hours listed by CAMRA; check with the venue for changes.</p>
+          <a href="https://camra.org.uk/pubs/strange-brew-chorlton-cum-hardy-129983" target="_blank" rel="noopener noreferrer">Check published hours ↗</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-top"><a href="#top" class="footer-logo">strange<br>brew<span>.</span></a><div class="footer-col"><span>FIND US</span><p>370 Barlow Moor Road<br>Chorlton · Manchester M21 8AZ</p></div><div class="footer-col"><span>SAY HELLO</span><a href="mailto:strangebrewbar@gmail.com">strangebrewbar@gmail.com ↗</a><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">@strangebrewbar ↗</a></div><a class="back-top" href="#top">BACK TO TOP ↑</a></div><div class="wrap footer-bottom"><span>INDEPENDENT PORTFOLIO CONCEPT · NOT COMMISSIONED BY OR AFFILIATED WITH STRANGE BREW.</span><span>ORIGINAL GRAPHICS ARE ILLUSTRATIVE. VENUE DETAILS MAY CHANGE.</span></div></footer>
+  <footer class="site-footer">
+    <div class="shell footer-grid"><a class="footer-brand" href="#top">strange<br>brew<span>.</span></a><p>A little bar on Barlow Moor Road.<br>Built around the people, not the playlist.</p><div class="footer-links"><a href="#whats-on">What's on</a><a href="#the-bar">The bar</a><a href="#the-place">The place</a><a href="#visit">Visit</a></div><div class="footer-links"><a href="https://www.instagram.com/strangebrewbar/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="mailto:strangebrewbar@gmail.com">Email ↗</a><a href="#top">Back to top ↑</a></div></div>
+    <div class="shell footer-bottom"><span>UNOFFICIAL PORTFOLIO CONCEPT · NOT COMMISSIONED OR ENDORSED BY STRANGE BREW</span><span>© Concept design · No venue photography or copyrighted artwork reproduced</span></div>
+  </footer>
 </body>
 </html>

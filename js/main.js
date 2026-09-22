@@ -1,45 +1,40 @@
 'use strict';
 
-const menuButton = document.querySelector('#menu-toggle');
-const mainNav = document.querySelector('#main-nav');
-const mobileQuery = window.matchMedia('(max-width: 900px)');
+const menuButton = document.getElementById('menu-button');
+const navigation = document.getElementById('site-nav');
+const mobile = window.matchMedia('(max-width: 900px)');
 
 function closeMenu(restoreFocus = false) {
-  if (!menuButton || !mainNav) return;
   document.body.classList.remove('nav-open');
   menuButton.setAttribute('aria-expanded', 'false');
-  menuButton.setAttribute('aria-label', 'Open navigation');
+  menuButton.setAttribute('aria-label', 'Open menu');
   if (restoreFocus) menuButton.focus();
 }
 
-function toggleMenu() {
-  if (!menuButton || !mainNav) return;
-  const isOpen = document.body.classList.toggle('nav-open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-  if (isOpen) mainNav.querySelector('a')?.focus();
-}
+if (menuButton && navigation) {
+  menuButton.addEventListener('click', () => {
+    const open = document.body.classList.contains('nav-open');
+    if (open) return closeMenu();
+    document.body.classList.add('nav-open');
+    menuButton.setAttribute('aria-expanded', 'true');
+    menuButton.setAttribute('aria-label', 'Close menu');
+    navigation.querySelector('a')?.focus();
+  });
 
-if (menuButton && mainNav) {
-  menuButton.addEventListener('click', toggleMenu);
-
-  mainNav.addEventListener('click', event => {
+  navigation.addEventListener('click', event => {
     if (event.target.closest('a')) closeMenu();
   });
 
   document.addEventListener('keydown', event => {
-    if (!document.body.classList.contains('nav-open')) return;
-
+    if (!mobile.matches || !document.body.classList.contains('nav-open')) return;
     if (event.key === 'Escape') {
-      closeMenu(true);
-      return;
+      event.preventDefault();
+      return closeMenu(true);
     }
-    if (event.key !== 'Tab' || !mobileQuery.matches) return;
-
-    const focusable = [menuButton, ...mainNav.querySelectorAll('a')];
+    if (event.key !== 'Tab') return;
+    const focusable = [menuButton, ...navigation.querySelectorAll('a')];
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
-
     if (event.shiftKey && document.activeElement === first) {
       event.preventDefault();
       last.focus();
@@ -50,23 +45,10 @@ if (menuButton && mainNav) {
   });
 
   document.addEventListener('pointerdown', event => {
-    const outsideMenu = !mainNav.contains(event.target) && !menuButton.contains(event.target);
-    if (outsideMenu && document.body.classList.contains('nav-open')) closeMenu();
+    if (document.body.classList.contains('nav-open') &&
+        !menuButton.contains(event.target) &&
+        !navigation.contains(event.target)) closeMenu();
   });
 
-  mobileQuery.addEventListener('change', () => closeMenu());
-}
-
-// All content remains readable if JavaScript or IntersectionObserver is unavailable.
-if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.documentElement.classList.add('js-motion');
-  const observer = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
-    }
-  }, { threshold: .05, rootMargin: '0px 0px 30px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(item => observer.observe(item));
+  mobile.addEventListener('change', () => closeMenu());
 }
