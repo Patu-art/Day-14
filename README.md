@@ -2,8 +2,10 @@
 
 Independent, unsolicited frontend concept for Strange Brew, Chorlton. Not official, commissioned by or endorsed by the bar.
 
+[Live concept](https://patu-art.github.io/Day-14/) · [Portfolio](https://patu-art.github.io/Portfolio/) · [Challenge log](https://patu-art.github.io/Portfolio/challenge.html)
+
 ## Why the redesign is different
-The earlier concept used a generic oversized title + illustrated vinyl + ticker and multiple decorative graphic cards. This version instead uses an information-first neighbourhood gig noticeboard, warm terracotta and burgundy inspired by descriptions of the bar's red room, compact paper event cards, a textual bar board, practical venue descriptions, operating hours and direct contact/directions. There are **no drawn records, fabricated photos, stock venue images, carousels or marquee tickers**.
+The earlier concept used a generic oversized title + illustrated vinyl + ticker and multiple decorative graphic cards. This version instead uses an information-first neighbourhood gig noticeboard, warm terracotta and burgundy inspired by descriptions of the bar's red room, compact paper event cards, a textual bar board, practical venue descriptions, operating hours and direct contact/directions. There are **no drawn records, fabricated venue photography, stock venue images, carousels or marquee tickers**. Five user-supplied venue photographs are used in the current version, subject to rights verification as described below.
 
 ## Structure
 - index.html — semantic page and useful venue information.
